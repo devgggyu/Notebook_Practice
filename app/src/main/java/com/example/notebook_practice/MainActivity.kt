@@ -12,6 +12,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+//        문법 연습(문법)
+        var myname = "강대규"// 변수 생성 + 대입=> 변수의 초기화
+
+        myname = "Kdg"
+
+        Log.d("변수값",myname)
+
+        val num1 =10
+
+
         clickBtn.setOnClickListener {
             //주석 남기는 법
 //             ctrl + / 커서가 있는 줄을 주석으로 남기는 방법
