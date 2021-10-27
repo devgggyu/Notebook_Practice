@@ -3,6 +3,7 @@ package com.example.notebook_practice
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.math.log
 
@@ -18,6 +19,9 @@ class MainActivity : AppCompatActivity() {
             Log.d("메인화면로그","클릭용 버튼 눌림")
             Log.e("메인화면로그","에러 관련 로그")
 
+        }
+        smallBtn.setOnClickListener {
+            Toast.makeText(this, "작은 버튼이 눌렸어", Toast.LENGTH_SHORT).show()
         }
     }
 
